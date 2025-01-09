@@ -1,0 +1,157 @@
+/* General Body Styles */
+/* @import url('https://fonts.googleapis.com/css2?family=Moul&family=Oswald:wght@200..700&family=Playwrite+CO+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+ /*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  place-content: center;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #f6f5f8;
+  gap: 20px;
+  padding: 20px;
+}
+
+.header {
+    width: 1200px;
+    height: 100px;
+    background-color: #05c7ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+.section {
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   } */
+  /* Aside Styles */
+  /* Article Styles 
+ .article, .aside {
+    width: 25%;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+  & .article {
+    background-color: #2ce648;
+   }
+  & .aside {
+    background-color: #3118f3;
+   }
+   /* image  
+.image {
+    width: 25px;
+    height: 25px;
+    flex: 1;
+    background-color: yellow;
+    text-align: center;
+    font-size: 10px;
+    flex-direction: column;
+    border: 1px solid #fefdfd;
+    padding: 20px;
+  } 
+  
+  /* Footer Styles 
+.footer {
+    grid-area: footer;
+    background-color: teal;
+    color: white;
+    text-align: center;
+    
+    font-size: 5vh;
+  } */ 
+@import url('https://fonts.googleapis.com/css2?family=Moul&family=Oswald:wght@200..700&family=Playwrite+CO+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "aside article"
+      "footer footer";
+
+    gap: 10px;
+    
+  }
+  
+  .header {
+
+    grid-area: header;
+    background-color: teal;
+    align-items: center;
+    padding: 10px;
+    color: rgb(6, 233, 245);
+    display: grid;
+    justify-content: center;
+  }
+  
+  .aside {
+    width: 50%;
+    height: 100%;
+    grid-area: aside;
+    background-color: lightgreen;
+    display: flex;
+    padding: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .article {
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .image {
+    width: 25%;
+    height: 25%;
+    background-color: yellow;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #ccc;
+    display: grid;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: teal;
+    text-align: center;
+    padding: 10px;
+    color: white;
+  }
